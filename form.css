@@ -1,0 +1,91 @@
+html,body,h1,form,fieldset,legend,ol,li{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffffff;
+    color: #111111;
+    font-family: Gabriola,"Times New Roman",Times,serif;
+    padding: 20px;
+}
+#payForm{
+    background: #9cbc2c;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+}
+#payForm fieldset{
+    border: none;
+    margin-bottom: 10px;
+}
+#payForm fieldset:last-of-type{
+    margin-bottom: 0px;
+}
+#payForm legend{
+    color: #384313;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-shadow: 0 1px 1px #c0d576;
+}
+#payForm>fieldset>legend:before{
+    content: "Step" counter(fieldsets)":";
+    counter-increment: fieldsets;
+}
+#payForm fieldset fieldset legend{
+    color: #111111;
+    font-size: 13px;
+    font-weight: normal;
+    padding-bottom: 0;
+}
+#payForm ol li{
+    background: #b9cf6a;
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #e3ebc3;
+    border-color: rgba(255,255,255,0.6);
+    border-style: solid;
+    border-width: 2px;
+    -webkit-border-radius: 5px;
+    line-height: 30px;
+    list-style: none;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+}
+#payForm ol ol li{
+    background: none;
+    border: none;
+    float: left;
+}
+#payForm label{
+    float: left;
+    font-size: 13px;
+    width:110px;
+}
+#payForm fieldset fieldset label{
+    background: none no-repeat left 50%;
+    line-height: 20px;
+    padding: 0 0 0 30px;
+    width:auto;
+}
+#payForm fieldset fieldset label:hover{
+    cursor: pointer;
+}
+#payForm input:not([type=radio]),#payForm textarea {
+    background: #ffffff;
+    border:#F3C solid 1px;
+    -webkit-border-radius: 3px;
+    font: italic 13px Gabriola,"Times New Roman",Times,serif;
+    outline: none;
+    padding: 5px;
+    width: 200px;
+}
+#payForm input:not([type=submit]):focus,#payForm textarea:focus{
+    background: #eaeaea;
+    border: #F00 solid 1px;
+}
+#payForm input[type=radio]{
+    float: left;
+    margin-right: 5px;
+}
+

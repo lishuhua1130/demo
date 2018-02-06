@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<form id="payForm" method="post" action="http://192.168.1.7:8080/test/loginServlet">
+    <fieldset>
+        <legend>用户详细信息</legend>
+        <ol>
+            <li>
+                <label>用户名称：</label>
+                <input id="userName" name="userName" type="text" placeholder="请输入用户名"  autofocus>
+            </li>
+            <li>
+                <label>邮箱地址：</label>
+                <input id="userEmail" name="userEmail" type="email" placeholder="example@163.com" >
+            </li>
+            <li>
+                <label>联系电话</label>
+                <input id="userTel" name="userTel" type="tel" placeholder="010-12345678" >
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <legend>家庭住址（收货方式）</legend>
+        <ol>
+            <li>
+                <label>详细住址</label>
+                <textarea id="address" name="address" rows="1" ></textarea>
+            </li>
+            <li>
+                <label>邮政编码</label>
+                <input id="postcode" name="postcode" type="text" >
+            </li>
+            <li>
+                <label>国家</label>
+                <input id="country" name="country" type="text" >
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <legend>付费方式</legend>
+        <ol>
+            <li>
+                <fieldset>
+                    <legend>信用卡类型</legend>
+                    <ol>
+                        <li>
+                            <input id="visa" name="cardType" type="radio">
+                            <label>中国工商银行</label>
+                        </li>
+                        <li>
+                            <input id="amex" name="cardType" type="radio">
+                            <label>中国人民银行</label>
+                        </li>
+                        <li>
+                            <input id="mastercard" name="cardType" type="radio">
+                            <label>中国建设银行</label>
+                        </li>
+                    </ol>
+                </fieldset>
+            </li>
+            <li>
+                <label>银行卡号</label>
+                <input id="cardNumber" name="cardNumber" type="number" >
+            </li>
+            <li>
+                <label>验证码</label>
+                <input id="secure" name="secure" type="number" >
+            </li>
+            <li>
+                <label>持卡人</label>
+                <input id="nameCard" name="cardName" type="text" placeholder="确定是否该卡用户" >
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <button type="submit">现在购买</button>
+    </fieldset>
+</form>
+</body>
+</html>
